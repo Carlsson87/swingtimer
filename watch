@@ -1,0 +1,7 @@
+#!/bin/sh
+
+./serve &
+
+clear
+elm19 make src/Main.elm --output=public/app.js
+watchman-make -p 'src/**/*.elm' --make='clear && elm19 make' -t 'src/Main.elm --output=public/app.js'

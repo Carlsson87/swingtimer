@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>Swings!</title>
+        
+        <style type="text/css" media="all">
+        html {
+            background: #EB3349;  
+            background: -webkit-linear-gradient(to bottom, #F45C43, #EB3349) fixed;
+            background: linear-gradient(to bottom, #F45C43, #EB3349) fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        body {
+            margin: 0;
+            color: white;
+            font-weight: 900;
+            font-family: Courier, monospace;
+            font-size: 32px;
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script type="text/javascript" src="app.js"></script>
+        <script charset="utf-8">
+            Elm.Main.init({
+                node: document.getElementById("app")
+            });
+        </script>
+    </body>
+</html>
